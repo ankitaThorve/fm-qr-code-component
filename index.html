@@ -46,10 +46,18 @@
                 padding: 0;
                 box-sizing: border-box;
                 height: 100vh;
-                display: flex;
+                display: block;
                 justify-content: center;
                 align-items: center;
                 background-color: hsl(212, 45%, 89%);
+            }
+
+            section {
+                position:relative;
+                top: 50%;
+                left: 50%;
+                translate: -50% -50%;
+                /* place-self: center; */
             }
             .card {
                 width: 250px;
@@ -69,6 +77,12 @@
             .attribution {
                 font-size: 11px;
                 text-align: center;
+                background-color: #333;
+                color: white;
+                padding: 20px 0;
+                width: 100%;
+                position: fixed;
+                bottom: 0;
             }
             .attribution a {
                 color: hsl(228, 45%, 44%);
@@ -84,16 +98,14 @@
                 Scan the QR code to visit Frontend Mentor and take your coding
                 skills to the next level
             </p>
-
-            <footer class="attribution">
-                Challenge by
-                <a
-                    href="https://www.frontendmentor.io?ref=challenge"
-                    target="_blank"
-                    >Frontend Mentor</a
-                >. Coded by
-                <a href="https://github.com/ankitaThorve">Ankita</a>.
-            </footer>
         </section>
+        <footer class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="https://github.com/ankitaThorve">Ankita</a>.
+        </footer>
     </body>
 </html>
